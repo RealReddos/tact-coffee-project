@@ -1,0 +1,17 @@
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  max-width: 100%;
+  border: 1px solid var(--color-line);
+}
+.tag-list__item {
+  padding: 8px 10px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.tag-list__item + .tag-list__item { border-left: 1px solid var(--color-line); }

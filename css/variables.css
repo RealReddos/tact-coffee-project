@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600&family=Unbounded:wght@700;800&display=swap");
+
+:root {
+  --font-display: "Unbounded", Arial, sans-serif;
+  --font-body: "Manrope", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+  --color-paper: #FFF6E9;
+  --color-surface: #FFFFFF;
+  --color-ink: #0B0B0B;
+  --color-accent: #1E40FF;
+  --color-line: #EADFCC;
+  --color-line-grid: rgba(234, 223, 204, 0.22);
+  --color-accent-10: rgba(30, 64, 255, 0.1);
+  --color-accent-80: rgba(30, 64, 255, 0.8);
+  --radius-card: 12px;
+  --radius-panel: 16px;
+  --radius-pill: 999px;
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 64px;
+  --space-8: 96px;
+  --border-ui: 1.5px solid var(--color-accent);
+  --border-ui-light: 1px solid var(--color-line);
+  --shadow-soft: 0 8px 24px rgba(14, 23, 56, 0.08);
+  --container-mobile: 328px;
+  --container-tablet: 704px;
+  --container-desktop: 1140px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Такт-кофе — Акции</title>
+  <link rel="stylesheet" href="./css/pages/promotions.css">
+</head>
+<body class="page">
+
+<header class="header">
+  <div class="header__inner container">
+    <a class="header__logo" href="./index.html" aria-label="Такт-кофе — на главную">
+      <span class="header__logo-mark">ТАКТ</span>
+    </a>
+    <nav class="header__nav" aria-label="Основная навигация">
+      <ul class="header__list">
+        <li><a class="header__link " href="./menu.html">Меню</a></li>
+        <li><a class="header__link header__link--active" href="./promotions.html">Акции</a></li>
+        <li><a class="header__link " href="./contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <button class="header__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="visually-hidden">Открыть меню</span>
+      <span class="header__toggle-line" aria-hidden="true"></span>
+    </button>
+  </div>
+  <nav class="header__mobile-menu" id="mobile-menu" aria-label="Мобильная навигация">
+    <div class="container">
+      <ul class="header__mobile-list">
+        <li><a class="header__mobile-link " href="./index.html">Главная</a></li>
+        <li><a class="header__mobile-link " href="./menu.html">Меню</a></li>
+        <li><a class="header__mobile-link header__mobile-link--active" href="./promotions.html">Акции</a></li>
+        <li><a class="header__mobile-link " href="./contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <main class="main">
+    <div class="container promotions">
+      <section class="page-hero"><h1 class="page-title">Акции</h1></section>
+      <section aria-label="Акции кофейни">
+        <div class="carousel">
+          <button class="carousel__arrow carousel__arrow--prev" type="button" aria-label="Предыдущий слайд"></button>
+          <div class="carousel__viewport">
+            <div class="carousel__track">
+              <article class="carousel__slide is-active">
+                <div class="carousel__media"><img src="./assets/promo-1.svg" alt="Утренний темп — скидка 20 процентов"></div>
+                <div class="carousel__body">
+                  <h2 class="carousel__title">Утренний темп −20%</h2>
+                  <p class="carousel__text">по будням 8:00–11:00 на эспрессо-бар.</p>
+                  <div class="carousel__pagination">
+                    <button class="carousel__bullet" type="button" aria-label="Слайд 1"></button>
+                    <button class="carousel__bullet is-active" type="button" aria-label="Слайд 2"></button>
+                    <button class="carousel__bullet" type="button" aria-label="Слайд 3"></button>
+                  </div>
+                </div>
+              </article>
+              <article class="carousel__slide">
+                <div class="carousel__media"><img src="./assets/promo-2.svg" alt="Колдбрю Вишня два по цене одного"></div>
+                <div class="carousel__body">
+                  <h2 class="carousel__title">Колдбрю «Вишня» 2‑за‑1</h2>
+                  <p class="carousel__text">по пятницам, до 17:00.</p>
+                  <div class="carousel__pagination">
+                    <button class="carousel__bullet" type="button" aria-label="Слайд 1"></button>
+                    <button class="carousel__bullet" type="button" aria-label="Слайд 2"></button>
+                    <button class="carousel__bullet" type="button" aria-label="Слайд 3"></button>
+                  </div>
+                </div>
+              </article>
+              <article class="carousel__slide">
+                <div class="carousel__media"><img src="./assets/promo-3.svg" alt="Свой стакан скидка 10 рублей"></div>
+                <div class="carousel__body">
+                  <h2 class="carousel__title">Свой стакан −10 ₽</h2>
+                  <p class="carousel__text">каждый день.</p>
+                  <div class="carousel__pagination">
+                    <button class="carousel__bullet" type="button" aria-label="Слайд 1"></button>
+                    <button class="carousel__bullet" type="button" aria-label="Слайд 2"></button>
+                    <button class="carousel__bullet" type="button" aria-label="Слайд 3"></button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="carousel__arrow carousel__arrow--next" type="button" aria-label="Следующий слайд"></button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+<footer class="footer">
+  <div class="footer__inner container">
+    <div class="footer__item">Адреса/часы</div>
+    <div class="footer__item">Быстрые ссылки</div>
+    <div class="footer__item">Копирайт</div>
+  </div>
+</footer>
+
+  <script src="./js/header.js"></script>
+  <script src="./js/carousel.js"></script>
+</body>
+</html>

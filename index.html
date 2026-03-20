@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Такт-кофе — Главная</title>
+  <link rel="stylesheet" href="./css/pages/main.css">
+</head>
+<body class="page">
+
+<header class="header">
+  <div class="header__inner container">
+    <a class="header__logo" href="./index.html" aria-label="Такт-кофе — на главную">
+      <span class="header__logo-mark">ТАКТ</span>
+    </a>
+    <nav class="header__nav" aria-label="Основная навигация">
+      <ul class="header__list">
+        <li><a class="header__link header__link--active" href="./menu.html">Меню</a></li>
+        <li><a class="header__link " href="./promotions.html">Акции</a></li>
+        <li><a class="header__link " href="./contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <button class="header__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="visually-hidden">Открыть меню</span>
+      <span class="header__toggle-line" aria-hidden="true"></span>
+    </button>
+  </div>
+  <nav class="header__mobile-menu" id="mobile-menu" aria-label="Мобильная навигация">
+    <div class="container">
+      <ul class="header__mobile-list">
+        <li><a class="header__mobile-link header__mobile-link--active" href="./index.html">Главная</a></li>
+        <li><a class="header__mobile-link " href="./menu.html">Меню</a></li>
+        <li><a class="header__mobile-link " href="./promotions.html">Акции</a></li>
+        <li><a class="header__mobile-link " href="./contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <main class="main">
+    <div class="container">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">Такт-кофе</h1>
+          <p class="hero__subtitle">Экстракция<br>под&nbsp;метроном.</p>
+          <a class="button button--primary button--l" href="./menu.html">Выбрать напиток</a>
+        </div>
+        <div class="hero__image" aria-hidden="true">
+          <img src="./assets/home-png/untitled-hero.png" alt="">
+        </div>
+      </section>
+
+      <section class="section benefits" aria-labelledby="benefits-title">
+        <h2 class="section-title" id="benefits-title">Почему к нам</h2>
+        <div class="benefits__grid">
+          <article class="feature-card">
+            <div class="feature-card__media"><img src="./assets/home-png/benefit-1-home.png" alt=""></div>
+            <div class="feature-card__body">
+              <h3 class="feature-card__title">Спецификация<br>стабильности</h3>
+              <p>Калибруем помол и рецепты дважды в день.</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__media"><img src="./assets/home-png/benefit-2-home.png" alt=""></div>
+            <div class="feature-card__body">
+              <h3 class="feature-card__title">Малые партии<br>обжарки</h3>
+              <p>Обновляем зёрна еженедельно, ведём профили и даты. Без «усталого» кофе.</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__media"><img src="./assets/home-png/benefit-3-home.png" alt=""></div>
+            <div class="feature-card__body">
+              <h3 class="feature-card__title">Темп<br>обслуживания</h3>
+              <p>Утренний поток отрабатываем по регламенту. Средняя выдача — до 5 минут, чек‑лист на баре.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section hits" aria-labelledby="hits-title">
+        <h2 class="section-title" id="hits-title">Хиты недели</h2>
+        <div class="hits__grid">
+
+    <article class="product-card  product-card--tags-2">
+      <div class="product-card__image-wrap">
+        <img class="product-card__image" src="./assets/home-png/cappuccino-home.png" alt="Капучино">
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__body">
+          <h3 class="product-card__title">Капучино</h3>
+          <p class="product-card__meta">S 200 мл · M 300 · L 400</p>
+        </div>
+        <p class="product-card__price">S 230 ₽ · M 260 ₽ · L 290 ₽</p>
+        <ul class="product-card__tags">
+          <li class="product-card__tag">DOSE 18 G</li><li class="product-card__tag">YIELD 36 G</li>
+        </ul>
+      </div>
+    </article>
+
+
+    <article class="product-card  product-card--tags-3">
+      <div class="product-card__image-wrap">
+        <img class="product-card__image" src="./assets/home-png/flat-white-home.png" alt="Флэт уайт">
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__body">
+          <h3 class="product-card__title">Флэт уайт</h3>
+          <p class="product-card__meta">250 мл</p>
+        </div>
+        <p class="product-card__price">250 ₽</p>
+        <ul class="product-card__tags">
+          <li class="product-card__tag">DOSE 18 G</li><li class="product-card__tag">YIELD 36 G</li><li class="product-card__tag">MICROFOAM</li>
+        </ul>
+      </div>
+    </article>
+
+
+    <article class="product-card  product-card--tags-3">
+      <div class="product-card__image-wrap">
+        <img class="product-card__image" src="./assets/home-png/filter-home.png" alt="Фильтр">
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__body">
+          <h3 class="product-card__title">Фильтр</h3>
+          <p class="product-card__meta">300 мл</p>
+        </div>
+        <p class="product-card__price">220 ₽</p>
+        <ul class="product-card__tags">
+          <li class="product-card__tag">RATIO 1:16</li><li class="product-card__tag">TEMP 92 °C</li><li class="product-card__tag">BREW 2:30</li>
+        </ul>
+      </div>
+    </article>
+
+
+    <article class="product-card  product-card--tags-2">
+      <div class="product-card__image-wrap">
+        <img class="product-card__image" src="./assets/home-png/americano-home.png" alt="Американо">
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__body">
+          <h3 class="product-card__title">Американо</h3>
+          <p class="product-card__meta">S 200 мл · M 300 · L 400</p>
+        </div>
+        <p class="product-card__price">S 230 ₽ · M 260 ₽ · L 290 ₽</p>
+        <ul class="product-card__tags">
+          <li class="product-card__tag">ESP 18 G</li><li class="product-card__tag">WATER 180–320 ML</li>
+        </ul>
+      </div>
+    </article>
+
+        </div>
+      </section>
+
+      <section class="about" aria-labelledby="about-title">
+        <div class="about__content">
+          <h2 class="section-title" id="about-title">О нас</h2>
+          <div class="about__text">
+            <p>Мы относимся к приготовлению как к инженерной задаче: измеряем, записываем, повторяем. В каждой карте напитка — доза, выход, температура и время. Журнал варок хранится рядом с гриндером, а профили обжарки — на стенде.</p>
+            <p>Нам важна прозрачность. Мы обжариваем малыми партиями, помечаем даты и не держим кофе дольше срока. Меню короткое, а бариста объяснит любой шаг. Если вы любите вариативность — подберём режим под ваш темп.</p>
+          </div>
+          <ul class="tag-list" aria-label="Принципы кофейни">
+            <li class="tag-list__item">SCA 82+</li>
+            <li class="tag-list__item">OPEN RECIPES</li>
+            <li class="tag-list__item">BREW LOG</li>
+            <li class="tag-list__item">SMALL BATCH</li>
+          </ul>
+        </div>
+        <div class="about__image">
+          <img src="./assets/home-png/about-home.png" alt="Иллюстрация процесса приготовления кофе">
+        </div>
+      </section>
+
+      <section class="faq" aria-labelledby="faq-title">
+        <div class="faq__inner">
+          <h2 class="section-title" id="faq-title">Ответы на вопросы</h2>
+          <div class="accordion">
+
+        <div class="accordion__item">
+          <button class="accordion__button" type="button" aria-expanded="false" aria-controls="accordion-panel-0" id="accordion-button-0">
+            <span class="accordion__title">Альтернативное молоко есть?</span>
+            <span class="accordion__icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion__panel" id="accordion-panel-0" role="region" aria-labelledby="accordion-button-0">
+            <div class="accordion__panel-inner">
+              <p class="accordion__content">Овсяное +30 ₽, кокос/миндаль +40 ₽.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion__item">
+          <button class="accordion__button" type="button" aria-expanded="false" aria-controls="accordion-panel-1" id="accordion-button-1">
+            <span class="accordion__title">Можно с собакой?</span>
+            <span class="accordion__icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion__panel" id="accordion-panel-1" role="region" aria-labelledby="accordion-button-1">
+            <div class="accordion__panel-inner">
+              <p class="accordion__content">Да, вода и миска у стойки.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion__item">
+          <button class="accordion__button" type="button" aria-expanded="false" aria-controls="accordion-panel-2" id="accordion-button-2">
+            <span class="accordion__title">Работа с ноутбуком?</span>
+            <span class="accordion__icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion__panel" id="accordion-panel-2" role="region" aria-labelledby="accordion-button-2">
+            <div class="accordion__panel-inner">
+              <p class="accordion__content">Да, розетки у стены, Wi‑Fi открыт.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion__item">
+          <button class="accordion__button" type="button" aria-expanded="false" aria-controls="accordion-panel-3" id="accordion-button-3">
+            <span class="accordion__title">Громко ли у нас?</span>
+            <span class="accordion__icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion__panel" id="accordion-panel-3" role="region" aria-labelledby="accordion-button-3">
+            <div class="accordion__panel-inner">
+              <p class="accordion__content">С 8:00 до 11:00 тише, после — город в темпе.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion__item">
+          <button class="accordion__button" type="button" aria-expanded="false" aria-controls="accordion-panel-4" id="accordion-button-4">
+            <span class="accordion__title">Свой стакан?</span>
+            <span class="accordion__icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion__panel" id="accordion-panel-4" role="region" aria-labelledby="accordion-button-4">
+            <div class="accordion__panel-inner">
+              <p class="accordion__content">−10 ₽ и спасибо планете.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion__item">
+          <button class="accordion__button" type="button" aria-expanded="false" aria-controls="accordion-panel-5" id="accordion-button-5">
+            <span class="accordion__title">Оплата?</span>
+            <span class="accordion__icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion__panel" id="accordion-panel-5" role="region" aria-labelledby="accordion-button-5">
+            <div class="accordion__panel-inner">
+              <p class="accordion__content">Карта/QR/наличные.</p>
+            </div>
+          </div>
+        </div>
+
+</div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+<footer class="footer">
+  <div class="footer__inner container">
+    <div class="footer__item">Адреса/часы</div>
+    <div class="footer__item">Быстрые ссылки</div>
+    <div class="footer__item">Копирайт</div>
+  </div>
+</footer>
+
+  <script src="./js/header.js"></script>
+  <script src="./js/accordion.js"></script>
+</body>
+</html>

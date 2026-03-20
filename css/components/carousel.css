@@ -1,0 +1,99 @@
+.carousel {
+  display: grid;
+  gap: 16px;
+}
+
+.carousel__viewport { min-width: 0; }
+.carousel__track { position: relative; }
+.carousel__slide { display: none; border: var(--border-ui); background-color: var(--color-surface); }
+.carousel__slide.is-active { display: block; }
+
+.carousel__media {
+  min-height: 154px;
+  display: grid;
+  place-items: center;
+  padding: 0 24px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-line);
+  background-color: var(--color-surface);
+  background-image:
+    linear-gradient(var(--color-line-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-line-grid) 1px, transparent 1px);
+  background-size: 8px 8px;
+  background-position: top left;
+}
+
+.carousel__media img {
+  width: min(100%, 650px);
+  height: 154px;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.carousel__body {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  padding: 12px 16px 16px;
+  text-align: center;
+}
+
+.carousel__title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  line-height: 1.14;
+  font-weight: 700;
+}
+
+.carousel__text { max-width: 38ch; }
+.carousel__pagination { display: flex; justify-content: center; gap: 8px; }
+.carousel__bullet { width: 40px; height: 8px; background-color: rgba(30, 64, 255, 0.2); }
+.carousel__bullet.is-active { background-color: var(--color-accent); }
+
+.carousel__arrow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin: 0 auto;
+  color: var(--color-accent);
+}
+.carousel__arrow::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(225deg);
+}
+.carousel__arrow--next::before { transform: rotate(45deg); }
+
+@media (min-width: 704px) {
+  .carousel {
+    grid-template-columns: 24px minmax(0, 1fr) 24px;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .carousel__arrow {
+    align-self: center;
+    width: 24px;
+    height: 48px;
+  }
+
+  .carousel__viewport { order: 0; }
+  .carousel__arrow--prev { order: 0; }
+  .carousel__arrow--next { order: 0; }
+
+  .carousel__media {
+    min-height: 304px;
+    padding: 0 32px;
+  }
+
+  .carousel__media img {
+    height: 304px;
+    max-width: 650px;
+    max-height: 304px;
+  }
+}

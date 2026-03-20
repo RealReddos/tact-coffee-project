@@ -1,0 +1,19 @@
+@import "../base.css";
+@import "../components/header.css";
+@import "../components/footer.css";
+@import "../components/carousel.css";
+
+.promotions {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.promotions .page-hero {
+  padding: var(--space-4) 0;
+}
+
+@media (min-width: 704px) {
+  .promotions .page-hero {
+    padding: var(--space-7) 0 var(--space-4);
+  }
+}
